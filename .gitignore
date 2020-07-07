@@ -1,0 +1,7 @@
+#will be generated automatically
+composer.lock
+vendor/*
+#cusom files in vendor directory
+vendor/bin/phpunit
+vendor/bin/phpunit.bat
+!vendor/bin/
