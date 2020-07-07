@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/../autoload.php';
+
+use Symfony\Component\Console\Application;
+use App\Console\Commands\CheckPossibilityCommand;
+use App\Console\Commands\PrintSkillsCommand;
+
+$app = new Application();
+$app->add(new PrintSkillsCommand());
+$app->add(new CheckPossibilityCommand());
+$app->run();
